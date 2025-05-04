@@ -10,19 +10,30 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f8f9fa;
     }
-    .building-item {
+    .building-card {
       background: white;
       padding: 1rem;
       margin-bottom: 1rem;
       border: 1px solid #dee2e6;
       border-radius: 0.5rem;
       box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+      display: flex;
+      align-items: center;
+    }
+    .building-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+      margin-right: 1rem;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <header class="bg-dark text-white">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-top">
+  <!-- Header Section -->
+  <header class="header bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">Heritage Kotagede</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -42,49 +53,51 @@
     </nav>
   </header>
 
-  <div class="container my-4">
+  <!-- Main Content Section -->
+  <main class="container my-4">
     <h2 class="mb-4">Daftar Bangunan Bersejarah</h2>
     <div class="row">
-      <div class="col-md-6">
-        <div class="building-item">
-          <h3>Joglo Mataram</h3>
-          <p>Bangunan tradisional bergaya Mataram yang masih asli dan terawat.</p>
+      <!-- Building Item 1 -->
+      <div class="col-md-12">
+        <div class="building-card">
+          <a href="https://maps.app.goo.gl/yM8zqjHPRFnpYupbA" target="_blank">
+            <img src="images/masjidmataram.jpg" alt="masjid gedhe mataram" />
+          </a>
+          <div>
+            <h3>Masjid Gedhe Mataram</h3>
+            <p>Bangunan tradisional bergaya Mataram yang masih asli dan terawat.</p>
+          </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="building-item">
-          <h3>Pendapa Ageng</h3>
-          <p>Tempat berkumpul keluarga bangsawan di masa lalu.</p>
+      <!-- Building Item 2 -->
+      <div class="col-md-12">
+        <div class="building-card">
+          <a href="https://maps.app.goo.gl/Pm7mx9HVqqoVj3s26" target="_blank">
+            <img src="images/joglojatikumaran.jpeg" alt="Joglo Jatikumaran" >
+          </a>
+          <div>
+            <h3>Joglo Jatikumaran</h3>
+            <p>Tempat berkumpul keluarga bangsawan di masa lalu.</p>
+          </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="building-item">
-          <h3>Rumah Lawas Alun-Alun</h3>
-          <p>Rumah dengan arsitektur Belanda-Jawa di dekat Alun-Alun Kotagede.</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="building-item">
-          <h3>Rumah Lawas Alun-Alun</h3>
-          <p>Rumah dengan arsitektur Belanda-Jawa di dekat Alun-Alun Kotagede.</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="building-item">
-          <h3>Rumah Lawas Alun-Alun</h3>
-          <p>Rumah dengan arsitektur Belanda-Jawa di dekat Alun-Alun Kotagede.</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="building-item">
-          <h3>Rumah Lawas Alun-Alun</h3>
-          <p>Rumah dengan arsitektur Belanda-Jawa di dekat Alun-Alun Kotagede.</p>
+      <!-- Building Item 3 -->
+      <div class="col-md-12">
+        <div class="building-card">
+          <a href="https://maps.app.goo.gl/eWBfLw95WVJCB1Za7" target="_blank">
+            <img src="images/omahugm.jpg" alt="Joglo Omah UGM" />
+          </a>
+          <div>
+            <h3>Joglo Omah UGM</h3>
+            <p>Rumah dengan arsitektur Belanda-Jawa di dekat Alun-Alun Kotagede.</p>
+          </div>
         </div>
       </div>
       <!-- Tambahkan item bangunan lain di sini -->
     </div>
-  </div>
+  </main>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
