@@ -13,19 +13,18 @@
     .building-card {
       background: white;
       padding: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       border: 1px solid #dee2e6;
       border-radius: 0.5rem;
       box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
-      display: flex;
-      align-items: center;
+      text-align: left;
     }
     .building-card img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
+      width: 100%;
+      height: 200px; /* Atur tinggi gambar agar seragam */
+      object-fit: cover; /* Memastikan gambar memenuhi area tanpa distorsi */
       border-radius: 0.5rem;
-      margin-right: 1rem;
+      margin-bottom: 1rem;
       cursor: pointer;
     }
   </style>
@@ -35,17 +34,21 @@
   <header class="header bg-dark text-white">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Heritage Kotagede</a>
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="images/logoheritage.png" alt="Logo Heritage Kotagede" width="60" height="60" class="me-2">
+          Heritage Kotagede
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Beranda</a>
+              <a class="nav-link active" href="index.html">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="daftar.html">Daftar Bangunan</a>
+              <a class="nav-link" href="daftar.html">Daftar Bangunan</a>
             </li>
           </ul>
         </div>
@@ -55,45 +58,87 @@
 
   <!-- Main Content Section -->
   <main class="container my-4">
-    <h2 class="mb-4">Daftar Bangunan Bersejarah</h2>
+    <h2 class="mb-4 text-center">Daftar Bangunan Bersejarah</h2>
     <div class="row">
       <!-- Building Item 1 -->
-      <div class="col-md-12">
+      <div class="col-md-4">
         <div class="building-card">
           <a href="https://maps.app.goo.gl/yM8zqjHPRFnpYupbA" target="_blank">
-            <img src="images/masjidmataram.jpg" alt="masjid gedhe mataram" />
+            <img src="images/masjidmataram.jpg" alt="Masjid Gedhe Mataram" />
           </a>
-          <div>
-            <h3>Masjid Gedhe Mataram</h3>
-            <p>Bangunan tradisional bergaya Mataram yang masih asli dan terawat.</p>
-          </div>
+          <h3>Masjid Gedhe Mataram</h3>
+          <p class=" text-justify">
+            Masjid Gedhe Mataram merupakan salah satu masjid tertua di Yogyakarta, 
+            dibangun pada abad ke-16 oleh Sultan Agung. Masjid ini memadukan arsitektur 
+            tradisional Jawa dengan sistem tata ruang khas Mataram Islam.
+          </p>
         </div>
       </div>
       <!-- Building Item 2 -->
-      <div class="col-md-12">
+      <div class="col-md-4">
         <div class="building-card">
           <a href="https://maps.app.goo.gl/Pm7mx9HVqqoVj3s26" target="_blank">
-            <img src="images/joglojatikumaran.jpeg" alt="Joglo Jatikumaran" >
+            <img src="images/joglojatikumaran.jpeg" alt="Joglo Jatikumaran" />
           </a>
-          <div>
-            <h3>Joglo Jatikumaran</h3>
-            <p>Tempat berkumpul keluarga bangsawan di masa lalu.</p>
-          </div>
+          <h3>Joglo Jatikumaran</h3>
+          <p class=" text-justify">
+            Joglo Jatikumaran adalah rumah tradisional bergaya Joglo yang dulunya 
+            menjadi tempat tinggal sekaligus pusat kegiatan keluarga bangsawan Jawa.
+          </p>
         </div>
       </div>
       <!-- Building Item 3 -->
-      <div class="col-md-12">
+      <div class="col-md-4">
         <div class="building-card">
           <a href="https://maps.app.goo.gl/eWBfLw95WVJCB1Za7" target="_blank">
             <img src="images/omahugm.jpg" alt="Joglo Omah UGM" />
           </a>
-          <div>
-            <h3>Joglo Omah UGM</h3>
-            <p>Rumah dengan arsitektur Belanda-Jawa di dekat Alun-Alun Kotagede.</p>
-          </div>
+          <h3>Joglo Omah UGM</h3>
+          <p class=" text-justify">
+            Joglo Omah UGM merupakan bangunan warisan yang dikelola oleh Universitas Gadjah Mada 
+            sebagai tempat pelestarian budaya dan kegiatan akademik.
+          </p>
         </div>
       </div>
-      <!-- Tambahkan item bangunan lain di sini -->
+      <!-- Building Item 4 -->
+      <div class="col-md-4">
+        <div class="building-card">
+          <a href="https://maps.app.goo.gl/eWBfLw95WVJCB1Za7" target="_blank">
+            <img src="images/omahugm.jpg" alt="Joglo Omah UGM" />
+          </a>
+          <h3>Joglo Omah UGM</h3>
+          <p class=" text-justify">
+            Joglo Omah UGM merupakan bangunan warisan yang dikelola oleh Universitas Gadjah Mada 
+            sebagai tempat pelestarian budaya dan kegiatan akademik.
+          </p>
+        </div>
+      </div>
+      <!-- Building Item 5 -->
+      <div class="col-md-4">
+        <div class="building-card">
+          <a href="https://maps.app.goo.gl/eWBfLw95WVJCB1Za7" target="_blank">
+            <img src="images/omahugm.jpg" alt="Joglo Omah UGM" />
+          </a>
+          <h3>Joglo Omah UGM</h3>
+          <p class=" text-justify">
+            Joglo Omah UGM merupakan bangunan warisan yang dikelola oleh Universitas Gadjah Mada 
+            sebagai tempat pelestarian budaya dan kegiatan akademik.
+          </p>
+        </div>
+      </div>
+      <!-- Building Item 6 -->
+      <div class="col-md-4">
+        <div class="building-card">
+          <a href="https://maps.app.goo.gl/eWBfLw95WVJCB1Za7" target="_blank">
+            <img src="images/omahugm.jpg" alt="Joglo Omah UGM" />
+          </a>
+          <h3>Joglo Omah UGM</h3>
+          <p class=" text-justify">
+            Joglo Omah UGM merupakan bangunan warisan yang dikelola oleh Universitas Gadjah Mada 
+            sebagai tempat pelestarian budaya dan kegiatan akademik.
+          </p>
+        </div>
+      </div>
     </div>
   </main>
 
