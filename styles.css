@@ -8,12 +8,12 @@ body {
   .slideshow-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Default fullscreen height */
+    height: 100vh; /* mengatur tinggi slideshow sesuai dengan tinggi layar */
     overflow: hidden;
   }
   .slideshow-slide img {
     width: 100%;
-    height: 100%; /* Gambar menyesuaikan tinggi container */
+    height: 100%; /* menytesuaikan gamabr dengan tinggi slideshow */
     object-fit: cover;
   }
   @media (max-width: 768px) {

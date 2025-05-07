@@ -3,24 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daftar Bangunan - Heritage Kotagede</title>
+  <!-- icon pada halaman -->
+  <title>Daftar Bangunan - Heritage Kotagede</title> 
   <link rel="icon" href="images/logoheritage.png" type="image/png">
+  <!-- css bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- css custom -->
   <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
   <!-- Header Section -->
   <header class="header bg-dark text-white">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+      <!-- memberikan responsif memperbesar pada layar lebih besar dari 992px 
+       dan menghilang/disembunyikan pada layar yang lebih kecil-->
       <div class="container">
-        <!-- Logo -->
+        <!-- Logo pada navbar-->
         <a class="navbar-brand d-flex align-items-center" href="index.html">
           <img src="images/logoheritage.png" alt="Logo Heritage Kotagede" width="60" height="60" class="me-2">
           Heritage Kotagede
         </a>
+        <!-- burger icon pada saat layar kecil -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -36,10 +43,14 @@
   </header>
 
   <!-- Main Content Section -->
+   <!-- membuat contaioner dengan margin atas dan bawah 1.5rem -->
   <main class="container my-4">
     <h2 class="mb-4 text-center">Daftar Bangunan Bersejarah</h2>
+    <!-- membuat baris grid-->
     <div class="row">
-      <!-- Building Item 1 -->
+
+      <!-- Building Item 1 
+       menentukan kolom grid dengan lebar4 dari 12 pada layar medium ke atas -->
       <div class="col-md-4">
         <div class="building-card">
           <a href="https://maps.app.goo.gl/yM8zqjHPRFnpYupbA" target="_blank">
@@ -54,6 +65,7 @@
           </p>
         </div>
       </div>
+
       <!-- Building Item 2 -->
       <div class="col-md-4">
         <div class="building-card">
@@ -69,6 +81,7 @@
           </p>
         </div>
       </div>
+
       <!-- Building Item 3 -->
       <div class="col-md-4">
         <div class="building-card">
@@ -84,6 +97,7 @@
           </p>
         </div>
       </div>
+
       <!-- Building Item 4 -->
       <div class="col-md-4">
         <div class="building-card">
@@ -98,6 +112,7 @@
           </p>
         </div>
       </div>
+
       <!-- Building Item 5 -->
       <div class="col-md-4">
         <div class="building-card">
@@ -113,6 +128,7 @@
           </p>
         </div>
       </div>
+
       <!-- Building Item 6 -->
       <div class="col-md-4">
         <div class="building-card">
@@ -131,7 +147,8 @@
     </div>
   </main>
 
-  <!-- Scripts -->
+  <!-- library JavaScript Bootstrap
+   Digunakan untuk fungsi interaktif seperti tombol toggle navbar -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
